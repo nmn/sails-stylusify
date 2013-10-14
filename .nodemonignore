@@ -1,0 +1,14 @@
+.tmp/**
+.tmp/*
+.tmp/
+.tmp
+/.tmp/**
+/.tmp/*
+/.tmp/
+/.tmp
+**/.tmp/**
+*/.tmp/**
+*/.tmp/*
+*/.tmp/
+*/.tmp
+*/*.css

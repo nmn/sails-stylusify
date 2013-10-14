@@ -1,0 +1,74 @@
+@import 'nib'
+
+global-reset()
+
+s-grey = rgb(200,200,200)
+
+html
+	height 100%
+	min-height 100%
+
+body
+	background radial-gradient(ellipse at center, rgba(255,255,255,1) 20%,rgba(210,210,210,1) 100%,rgba(210,210,210,1) 100%);
+	background-size 100% 100%
+	background-repeat no-repeat
+	background-attachment fixed
+	line-height 150%
+	font-family "Source Sans Pro", "Helvetica Neue", Helvetica, arial, sans-serif
+	font-weight 300
+	min-height 100%
+	a, a:visited
+		color rgb(120,190,245)
+		text-decoration none
+		font-weight 500
+		&:hover
+			color rgb(120,245,190)
+	header
+		padding 4rem 0
+		position relative
+		text-align center
+		transition 1s ease
+		margin-bottom 2rem
+		@media screen and (max-width: 40rem)
+			padding 2rem 0 2rem 3rem
+			margin-bottom 0
+		span
+			display inline
+			position relative
+			.issue
+				position absolute
+				left 0
+				top 100%
+				font-size 1.6rem
+				color s-grey
+				@media screen and (max-width: 40rem)
+					font-size 1rem
+			.date
+				position absolute
+				right 2.75%
+				top 100%
+				font-size 1.6rem
+				color s-grey
+				@media screen and (max-width: 40rem)
+					font-size 1rem
+		img
+			width 60%
+			transition 1s ease
+			@media screen and (max-width: 40rem)
+				width 70%
+		img.hamburger
+			position absolute
+			top 1.5rem
+			left 2rem
+			width 3rem
+			margin-top 0
+			@media screen and (max-width: 40rem)
+				top 50%
+				left 2rem
+				width 2rem
+				margin-top -0.95rem
+
+p
+	max-width 55rem
+	margin auto
+	padding 2rem
